@@ -9,7 +9,7 @@ BEGIN
   RADIO    r1          10  40   120  ., first label("Schede Beneficiario")
   RADIO    r2          10  70   120  ., middle label("Rilev. Baseline")
   RADIO    r3          10  100   120  ., middle label("Rilev. Endline")
-  RADIO    r4          10  130   120  ., last label("Rilev. Follow Up 1")
+  RADIO    r4          10  130   120  ., middle label("Rilev. Follow Up 1")
   RADIO    r5          10  150   120  ., last label("Rilev. Follow Up 2")
   CHECKBOX proj1         150  10    120  ., label("2022-ONL-00041")
   CHECKBOX proj2         150  30    120  ., label("2022-ONL-00051")
