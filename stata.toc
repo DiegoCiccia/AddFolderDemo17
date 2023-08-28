@@ -1,0 +1,5 @@
+v 1.0.0
+d Diego Ciccia - Evaluation Lab, Fondo Repubblica Digitale
+d d.ciccia@frd.evaluationlab.it
+
+p survey_sel

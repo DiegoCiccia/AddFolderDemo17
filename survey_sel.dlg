@@ -1,0 +1,181 @@
+VERSION 17
+
+POSITION . . 300 500
+
+
+DIALOG main, label("Survey Selector - EL") tabtitle("Main")
+BEGIN
+  TEXT     tx_gen      10  10   120  100, label("Select the directory:")
+  RADIO    r1          10  40   120  ., first label("Schede Beneficiario")
+  RADIO    r2          10  70   120  ., middle label("Rilev. Baseline")
+  RADIO    r3          10  100   120  ., middle label("Rilev. Endline 1")
+  RADIO    r4          10  130   120  ., last label("Rilev. Endline 2")
+  CHECKBOX proj1         150  10    120  ., label("2022-ONL-00041")
+  CHECKBOX proj2         150  30    120  ., label("2022-ONL-00051")
+  CHECKBOX proj3         150  50    120  ., label("2022-ONL-00119")
+  CHECKBOX proj4         150  70    120  ., label("2022-ONL-00168")
+  CHECKBOX proj5         150  90    120  ., label("2022-ONL-00176")
+  CHECKBOX proj6         150  110    120  ., label("2022-ONL-00239")
+  CHECKBOX proj7         150  130    120  ., label("2022-ONL-00251")
+  CHECKBOX proj8         150  150    120  ., label("2022-ONL-00305")
+  CHECKBOX proj9         150  170    120  ., label("2022-ONL-00323")
+  CHECKBOX proj10         150  190    120  ., label("2022-ONL-00352")
+  CHECKBOX proj11         150  210    120  ., label("2022-ONL-00448")
+  CHECKBOX proj12         150  230    120  ., label("2022-ONL-00505")
+  CHECKBOX proj13         150  250    120  ., label("2022-FUT-00101")
+  CHECKBOX proj14         150  270    120  ., label("2022-FUT-00121")
+  CHECKBOX proj15         150  290    120  ., label("2022-FUT-00150")
+  CHECKBOX proj16         150  310    120  ., label("2022-FUT-00214")
+  CHECKBOX proj17         150  330    120  ., label("2022-FUT-00215")
+  CHECKBOX proj18         150  350    120  ., label("2022-FUT-00253")
+  CHECKBOX proj19         150  370    120  ., label("2022-FUT-00292")
+  CHECKBOX proj20         150  390    120  ., label("2022-FUT-00318")
+  CHECKBOX proj21         150  410    120  ., label("2022-FUT-00336")
+  CHECKBOX proj22         150  430    120  ., label("2022-FUT-00341")
+  CHECKBOX proj23         150  450    120  ., label("2022-FUT-00362")
+END
+
+OK ok1,      label("OK")
+CANCEL can1, label("Cancel")
+
+PROGRAM command
+BEGIN
+  put "clear"
+  stata 
+  clear
+  if main.r1 {
+     put "global folder = 1"
+     stata
+     clear
+  }
+  if main.r2 {
+    put "global folder = 2"
+     stata
+     clear
+  }
+  if main.r3 {
+    put "global folder = 3"
+    stata
+    clear
+  }
+  if main.r4 {
+    put "global folder = 4"
+    stata
+    clear
+  }
+if main.proj1 {
+        put "global proj1 = 1"
+       stata
+       clear
+ }
+if main.proj2 {
+        put "global proj2 = 1"
+       stata
+       clear
+ }
+if main.proj3 {
+        put "global proj3 = 1"
+       stata
+       clear
+ }
+if main.proj4 {
+        put "global proj4 = 1"
+       stata
+       clear
+ }
+if main.proj5 {
+        put "global proj5 = 1"
+       stata
+       clear
+ }
+if main.proj6 {
+        put "global proj6 = 1"
+       stata
+       clear
+ }
+if main.proj7 {
+        put "global proj7 = 1"
+       stata
+       clear
+ }
+if main.proj8 {
+        put "global proj8 = 1"
+       stata
+       clear
+ }
+if main.proj9 {
+        put "global proj9 = 1"
+       stata
+       clear
+ }
+if main.proj10 {
+        put "global proj10 = 1"
+       stata
+       clear
+ }
+if main.proj11 {
+        put "global proj11 = 1"
+       stata
+       clear
+ }
+if main.proj12 {
+        put "global proj12 = 1"
+       stata
+       clear
+ }
+if main.proj13 {
+        put "global proj13 = 1"
+       stata
+       clear
+ }
+if main.proj14 {
+        put "global proj14 = 1"
+       stata
+       clear
+ }
+if main.proj15 {
+        put "global proj15 = 1"
+       stata
+       clear
+ }
+if main.proj16 {
+        put "global proj16 = 1"
+       stata
+       clear
+ }
+if main.proj17 {
+        put "global proj17 = 1"
+       stata
+       clear
+ }
+if main.proj18 {
+        put "global proj18 = 1"
+       stata
+       clear
+ }
+if main.proj19 {
+        put "global proj19 = 1"
+       stata
+       clear
+ }
+if main.proj20 {
+        put "global proj20 = 1"
+       stata
+       clear
+ }
+if main.proj21 {
+        put "global proj21 = 1"
+       stata
+       clear
+ }
+if main.proj22 {
+        put "global proj22 = 1"
+       stata
+       clear
+ }
+if main.proj23 {
+        put "global proj23 = 1"
+       stata
+       clear
+ }
+END
